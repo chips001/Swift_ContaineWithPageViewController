@@ -74,6 +74,7 @@
                                     <constraint firstItem="sQ7-2A-aI5" firstAttribute="leading" secondItem="6k7-ub-xYD" secondAttribute="leading" id="HRj-dg-b7P"/>
                                     <constraint firstAttribute="trailing" secondItem="sQ7-2A-aI5" secondAttribute="trailing" id="aEw-dc-nJn"/>
                                     <constraint firstItem="sQ7-2A-aI5" firstAttribute="top" secondItem="6k7-ub-xYD" secondAttribute="top" id="e6H-ce-wNP"/>
+                                    <constraint firstItem="sQ7-2A-aI5" firstAttribute="height" secondItem="6k7-ub-xYD" secondAttribute="height" id="eeQ-gX-alM"/>
                                     <constraint firstAttribute="bottom" secondItem="sQ7-2A-aI5" secondAttribute="bottom" id="yfw-Dh-VbZ"/>
                                 </constraints>
                             </scrollView>
