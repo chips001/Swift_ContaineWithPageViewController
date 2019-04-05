@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_ContaineWithPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6k7-ub-xYD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="sQ7-2A-aI5">
+                                        <rect key="frame" x="0.0" y="0.0" width="496" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXi-fi-fLT">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="GTq-dN-Ntd"/>
+                                                </constraints>
+                                                <state key="normal" title="FirestView"/>
+                                                <connections>
+                                                    <action selector="firstViewButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MhN-Z9-Dxn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zd-09-mAe">
+                                                <rect key="frame" x="136" y="0.0" width="85" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="b0E-eA-27U"/>
+                                                </constraints>
+                                                <state key="normal" title="SecondView"/>
+                                                <connections>
+                                                    <action selector="secondViewButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wlg-RY-ZwM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcc-5R-yWN">
+                                                <rect key="frame" x="285" y="0.0" width="69" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="4Of-7e-gBd"/>
+                                                </constraints>
+                                                <state key="normal" title="ThirdView"/>
+                                                <connections>
+                                                    <action selector="thirdViewButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rvu-zZ-QSX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-Yr-x1r">
+                                                <rect key="frame" x="418" y="0.0" width="78" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="Yai-Pi-nvs"/>
+                                                </constraints>
+                                                <state key="normal" title="FourthView"/>
+                                                <connections>
+                                                    <action selector="fourthViewButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8cu-35-hU0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="snj-p1-kVl"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sQ7-2A-aI5" firstAttribute="leading" secondItem="6k7-ub-xYD" secondAttribute="leading" id="HRj-dg-b7P"/>
+                                    <constraint firstAttribute="trailing" secondItem="sQ7-2A-aI5" secondAttribute="trailing" id="aEw-dc-nJn"/>
+                                    <constraint firstItem="sQ7-2A-aI5" firstAttribute="top" secondItem="6k7-ub-xYD" secondAttribute="top" id="e6H-ce-wNP"/>
+                                    <constraint firstAttribute="bottom" secondItem="sQ7-2A-aI5" secondAttribute="bottom" id="yfw-Dh-VbZ"/>
+                                </constraints>
+                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kM-Db-KuL">
+                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                                <connections>
+                                    <segue destination="Lqd-xP-O3u" kind="embed" id="83t-cP-7Kz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6k7-ub-xYD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5wk-2q-BtI"/>
+                            <constraint firstItem="8kM-Db-KuL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JPo-st-IbC"/>
+                            <constraint firstItem="8kM-Db-KuL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NDv-Ho-pXU"/>
+                            <constraint firstItem="6k7-ub-xYD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bwR-51-20C"/>
+                            <constraint firstItem="8kM-Db-KuL" firstAttribute="top" secondItem="6k7-ub-xYD" secondAttribute="bottom" constant="8" id="n85-pX-f2e"/>
+                            <constraint firstItem="8kM-Db-KuL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="92" id="oG2-ct-4Zo"/>
+                            <constraint firstItem="8kM-Db-KuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pZi-e8-h6D"/>
+                            <constraint firstItem="6k7-ub-xYD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vEM-IX-hsL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstViewButton" destination="MXi-fi-fLT" id="iBl-nR-WJS"/>
+                        <outlet property="fourthViewButton" destination="CAs-Yr-x1r" id="q8W-Fe-o4V"/>
+                        <outlet property="menuScrollView" destination="6k7-ub-xYD" id="i1D-3w-F2E"/>
+                        <outlet property="secondViewButton" destination="8Zd-09-mAe" id="5Bb-Ht-y4g"/>
+                        <outlet property="thirdViewButton" destination="Hcc-5R-yWN" id="Ann-Nr-ReV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="125.4872563718141"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="PNE-cY-hlI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Lqd-xP-O3u" customClass="PageViewController" customModule="Swift_ContaineWithPageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spf-9R-lvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="125"/>
+        </scene>
+    </scenes>
+</document>
